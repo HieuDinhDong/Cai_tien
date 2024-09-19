@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray2"
+    android:orientation="vertical"
+    tools:context=".fragments.StaticMonthFragment">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/doanhthu"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_cus"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_order"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"/>
+
+</LinearLayout>

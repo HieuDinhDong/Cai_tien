@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_item_order"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/botron_edittext1"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btn_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botron_edittext"
+        android:backgroundTint="@color/gray5"
+        android:padding="10dp"
+        android:text="Huỷ đơn hàng"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="đ29.000"
+        android:textColor="@color/green_notify"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_num_goods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Số lượng gói hàng: 2"
+        android:textColor="@color/gray"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_price" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_num_goods">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_fast" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_type_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Siêu tốc"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_dot_start"
+        android:layout_width="13sp"
+        android:layout_height="13sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border_outline_circle_green_full"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/txt_type_order" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_address_start"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Địa điểm gửi"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_dot_start"
+        app:layout_constraintStart_toEndOf="@+id/txt_dot_start"
+        app:layout_constraintTop_toTopOf="@+id/txt_dot_start" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/line"
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray"
+        app:layout_constraintEnd_toEndOf="@+id/txt_dot_start"
+        app:layout_constraintStart_toStartOf="@+id/txt_dot_start"
+        app:layout_constraintTop_toBottomOf="@+id/txt_dot_start" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_dot_end"
+        android:layout_width="13sp"
+        android:layout_height="13sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border_outline_circle_green"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/txt_address_start" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_address_end"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="Địa điểm nhận"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_dot_end"
+        app:layout_constraintStart_toEndOf="@+id/txt_dot_end"
+        app:layout_constraintTop_toTopOf="@+id/txt_dot_end" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="29-11-2023"
+        android:textColor="@color/gray"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_address_end" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
